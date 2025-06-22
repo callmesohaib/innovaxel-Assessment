@@ -54,7 +54,7 @@ function ExpenseList({ expenses, onDelete, onEdit, filters }) {
 
     if (activeExpense) {
       document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = "15px"; // Prevent scrollbar jump
+      document.body.style.paddingRight = "15px";
     } else {
       document.body.style.overflow = "auto";
       document.body.style.paddingRight = "0";
