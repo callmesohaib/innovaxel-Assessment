@@ -131,7 +131,7 @@ function App() {
             Track your spending with precision
           </p>
 
-          {/* Tab Navigation - Full width */}
+          {/* Tabs */}
           <motion.div
             className="flex flex-col sm:flex-row mb-6 sm:mb-8 rounded-lg sm:rounded-xl bg-gray-800 p-0.5 sm:p-1 border border-gray-700 w-full" // Added w-full
             variants={itemVariants}
@@ -158,7 +158,7 @@ function App() {
             ))}
           </motion.div>
 
-          {/* Tab Content - Full width */}
+          {/* Tab Content */}
           <AnimatePresence mode="wait">
             {activeTab === 'add' && (
               <motion.div
@@ -167,7 +167,7 @@ function App() {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="w-full" // Added w-full
+                className="w-full" 
               >
                 <ExpenseForm
                   onSubmit={addExpense}
@@ -210,7 +210,7 @@ function App() {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 w-full" // Added w-full
+                className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 w-full"
               >
                 <SummaryStats expenses={expenses} />
                 <SummaryChart expenses={expenses} />
